@@ -12,22 +12,22 @@
   <form action="{{Route('Register.Registr')}}" method="post">
     @csrf
     @method('post')
-    <!-- Email -->
+   
     <label for="email"><title></title>:</label>
     <input type="email" id="email" name="email" required>
     <br>
 
-    <!-- Username -->
+    
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
     <br>
 
-    <!-- Password -->
+    
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
     <br>
 
-    <!-- Confirm Password -->
+    
     <label for="confirmPassword">Confirm Password:</label>
     <input type="password" id="confirmPassword" name="confirmPassword" required>
     <br>
@@ -59,6 +59,12 @@
     @endforeach
   </tbody>
 </table>
-
+<!--view pour invalable book-->
+@foreach($unavailableBooks as $book)
+    <p>{{ $book->title }}</p>
+    @endforeach
 </body>
 </html>
+   
+
+

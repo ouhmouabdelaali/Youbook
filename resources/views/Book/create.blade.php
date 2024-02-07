@@ -1,10 +1,14 @@
-@extends('Book.layout')
+@extends('Pages.layout')
 
 @section('content')
+
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
     <div class="card" style="margin: 20px;">
         <div class="card-header"></div>
         <div class="card-body">
-            <form action="{{url('Books')}}" method="post">
+            <form action="{{url('books/newbook')}}" method="post">
             @csrf
             @method('post')
                 <label >title</label>
@@ -21,4 +25,8 @@
 
         </div>
     </div>
+
+    </div>
+        </div>
+    </div>    
 @endsection
