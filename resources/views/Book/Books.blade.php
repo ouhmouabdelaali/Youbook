@@ -33,7 +33,7 @@
                     <!-- Add more details as needed -->
                 </ul>
                 <div class="card-body d-flex column-gap-1 ">
-                <a href=" {{route('view-book',$book->id)}}"title="view book"><button type="button" class="btn btn-info">view</button></a>
+               
                  <a href="{{url('books/'.$book->id.'/update')}}"title="Eidet book"><button type="button" class="btn btn-primary">Eidet</button></a>
         
                   <form action="{{ url('/books/'.$book->id) }}" method="POST">
